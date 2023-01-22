@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Movie</title>
+  </head>
+  <body>
+    <main>
+      <section class="card-section">
+        <div class="container">
+          <form class="form">
+            <input class="form-input" type="text" placeholder="searching...." />
+            <select class="form-select">
+              <option value="all">All</option>
+            </select>
+          </form>
+        </div>
+        <div class="card-wrapper"></div>
+        <div class="card-modal-wrap">
+          <div class="card-modal"></div>
+        </div>
+      </section>
+
+      <ul class="movies-list has-scrollbar">
+        <li>
+          <div class="movie-card">
+            <a href="#">
+              <figure class="card-banner">
+                <img
+                  src="https://c4.wallpaperflare.com/wallpaper/450/510/321/doctor-strange-superheroes-artist-artwork-wallpaper-preview.jpg"
+                  alt="The Northman movie poster"
+                />
+              </figure>
+            </a>
+            <div class="title-wrapper">
+              <a href="#">
+                <h3 class="card-title">The Northman</h3>
+              </a>
+              <time datetime="2022">2022</time>
+            </div>
+            <div class="card-meta">
+              <div class="badge badge-outline">HD</div>
+              <div class="duration">
+                <ion-icon name="time-outline"></ion-icon>
+                <time datetime="PT137M">137 min</time>
+              </div>
+              <div class="rating">
+                <ion-icon name="star"></ion-icon>
+                <data>8.5</data>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <script src="./js/film.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
